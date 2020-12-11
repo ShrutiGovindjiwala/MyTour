@@ -45,8 +45,8 @@ public class SignUpActivity extends AppCompatActivity {
         get_OTP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               enter.setVisibility(View.INVISIBLE);
-               get.setVisibility(View.VISIBLE);
+                enter.setVisibility(View.VISIBLE);
+                get.setVisibility(View.INVISIBLE);
             }
         });
         login=findViewById(R.id.login);
