@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@color/white">
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -50,7 +51,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingTop="20dp">
+                >
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="#31E8735D"
+                    android:ems="10"
+                    android:hint="Enter Name"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="#31E8735D"
+                    android:ems="10"
+                    android:maxLength="10"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
                 <EditText
                     android:id="@+id/number"
                     android:layout_width="match_parent"
@@ -63,7 +101,7 @@
                     android:backgroundTint="#31E8735D"
                     android:ems="10"
                     android:maxLength="10"
-                    android:hint="Mobile Number"
+                    android:hint="Enter Mobile Number"
                     android:inputType="number"
                     android:paddingHorizontal="20dp"
                     android:paddingVertical="10dp"
@@ -135,4 +173,31 @@
 
     </LinearLayout>
     </ScrollView>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Login!"
+            android:textColor="#e8735d"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
