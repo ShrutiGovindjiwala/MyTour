@@ -28,7 +28,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="60dp"
             android:gravity="center"
-            android:text="ATTRACTIONS"
+            android:text="HOTEL SEARCH"
             android:textColor="@color/black"
             android:textSize="24dp"
             android:textStyle="bold" />
@@ -37,7 +37,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/cardsView"
+        android:id="@+id/hotelsView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
